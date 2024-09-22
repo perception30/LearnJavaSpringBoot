@@ -19,7 +19,7 @@ Welcome to **Chapter 1: Introduction** of the _Comprehensive Java Spring Boot Tu
 
 Enterprise applications demand scalability, robustness, and maintainability. Java has long been a staple in enterprise environments due to its performance, security features, and vast ecosystem. Spring Boot enhances Java's capabilities by providing a streamlined framework for building production-ready applications with minimal configuration.
 
-![Enterprise Architecture Diagram](https://www.example.com/enterprise-architecture-diagram.png)
+![Enterprise Architecture Diagram](/assets/Figure_1.1_ Spring_Boot_in_Enterprise_Architecture.png)
 
 *Figure 1.1: Spring Boot in Enterprise Architecture*
 
@@ -533,34 +533,3 @@ In the next chapter, you'll delve into **Java Fundamentals**, where you'll revis
 - [Clean Code by Robert C. Martin](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - [Spring Boot Guides](https://spring.io/guides)
 - [Baeldung's Spring Boot Tutorials](https://www.baeldung.com/spring-boot)
-
-## Interactive Elements
-
-### Quick Quiz
-
-1. **What is the primary benefit of using Spring Boot's auto-configuration?**
-   - A) It eliminates the need for any configuration.
-   - B) It automatically configures your application based on the dependencies you have added.
-   - C) It only configures embedded servers.
-   - D) None of the above.
-
-2. **Which annotation is used to denote a Spring-managed service class?**
-   - A) `@Controller`
-   - B) `@Service`
-   - C) `@Repository`
-   - D) `@Component`
-
-*Answers*:
-1. B) It automatically configures your application based on the dependencies you have added.
-2. B) `@Service`
-
-### Reflection Questions
-
-- How does Spring Boot's approach to dependency injection compare with the dependency management in Node.js frameworks like Express?
-- In what ways does Java's static typing benefit large-scale enterprise applications compared to JavaScript's dynamic typing?
-
-## Feedback and Iteration
-
-We value your feedback to continuously improve this tutorial. Please share your thoughts, suggestions, or report any issues by participating in our [Spring Boot Community Forums](https://spring.io/blog/category/spring-boot) or by contacting the support team at [support@example.com](mailto:support@example.com).
-
----
