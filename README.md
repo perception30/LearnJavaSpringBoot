@@ -285,6 +285,3 @@
 - **15.1. Recap of What You've Learned**
 - **15.2. Next Steps in Your Spring Boot Journey**
 - **15.3. Continued Learning and Staying Updated**
-
-
-# LearnJavaSpringBoot
