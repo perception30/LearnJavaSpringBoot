@@ -23,7 +23,7 @@
 - **2.2. [Object-Oriented Programming in Java](./02_Java_Fundamentals_2.2_Object_Oriented_Programming_In_Java.md)**
   - Classes and Objects
   - Inheritance, Polymorphism, Encapsulation, Abstraction
-- **2.3. [Advanced Java Concepts](./02_Java_Fundamentals_2.3_Advanced_Java_Concepts.md)**
+- **2.3. [Advanced Java Concepts](./02_Java_Fundamentals_2.3_Advanced_Concepts_In_Java.md)**
   - Collections Framework
   - Generics
   - Exception Handling
