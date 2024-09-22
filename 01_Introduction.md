@@ -104,6 +104,28 @@ public class HelloController {
 - **Framework Usage**: Spring Boot leverages annotations to simplify configuration and routing.
 - **Server Setup**: Node.js requires explicit server creation, whereas Spring Boot handles server setup through embedded servers.
 
+
+```mermaid
+graph LR
+    subgraph Node.js Application
+        Client[Client Devices] -->|HTTP Request| ExpressServer[Express.js Server]
+        ExpressServer -->|Handles Request| Routes[Express Routes]
+        Routes -->|Business Logic| Controllers[Controllers]
+        Controllers -->|Database Operations| Database[(Database)]
+    end
+
+    subgraph Spring Boot Application
+        Client[Client Devices] -->|HTTP Request| APIGateway[API Gateway]
+        APIGateway --> SpringBootApp[Spring Boot Application]
+        SpringBootApp -->|Handles Request| Controllers[Controllers]
+        Controllers -->|Business Logic| Services[Services]
+        Services -->|Data Access| Repositories[Repositories]
+        Repositories --> Database[(Database)]
+    end
+```
+
+*Figure 1.2: Comparative Architecture of Node.js and Spring Boot Applications*
+
 ## 1. Welcome
 
 ### Overview of the Tutorial
