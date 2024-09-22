@@ -75,7 +75,7 @@ To appreciate Spring Boot's capabilities, it's essential to compare it with othe
 | **Scalability**             | Excellent for enterprise applications              | Highly scalable for modern web applications |
 | **Tooling and IDE Support** | Superior (IntelliJ IDEA, Eclipse)                  | Excellent (VS Code)                         |
 
-## Subtopic 3: Setting Up the Development Environment
+## 3: Setting Up the Development Environment
 
 Setting up a robust development environment is crucial for efficient and effective development. This section guides you through configuring your system for Java and Spring Boot development.
 
