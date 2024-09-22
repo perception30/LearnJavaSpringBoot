@@ -364,115 +364,6 @@ Version control is essential for tracking changes and collaborating with others.
      git push -u origin master
      ```
 
-## Best Practices and Design Patterns
-
-Implementing best practices and design patterns is crucial for building scalable and maintainable applications. Spring Boot supports various design patterns that help in organizing code effectively.
-
-### Dependency Injection
-
-Spring Boot's core feature is dependency injection, which promotes loose coupling and easier testing.
-
-```
-// Spring Boot: Dependency Injection Example
-package com.example.demo;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class Application implements CommandLineRunner {
-
-    @Autowired
-    private GreetingService greetingService;
-
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        greetingService.sayGreeting();
-    }
-}
-
-@Service
-class GreetingService {
-
-    public void sayGreeting() {
-        System.out.println("Hello, Spring Boot!");
-    }
-}
-```
-
-*Explanation*:
-- `@SpringBootApplication`: Marks the main class of a Spring Boot application.
-- `@Autowired`: Injects the `GreetingService` dependency.
-- `@Service`: Indicates that the class provides business functionalities.
-
-### Singleton Pattern
-
-Spring Beans are singleton by default, meaning there is only one instance per Spring IoC container.
-
-```
-package com.example.demo;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class SingletonService {
-    // Singleton bean
-}
-```
-
-### Factory Pattern
-
-The Factory pattern is used to create objects without exposing the creation logic to the client.
-
-```
-package com.example.demo;
-
-public class ShapeFactory {
-
-    public Shape getShape(String shapeType) {
-        if(shapeType == null){
-            return null;
-        }        
-        if(shapeType.equalsIgnoreCase("CIRCLE")){
-            return new Circle();
-        } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
-            return new Rectangle();
-        }
-        return null;
-    }
-}
-
-interface Shape {
-    void draw();
-}
-
-class Circle implements Shape {
-
-    @Override
-    public void draw() {
-        System.out.println("Inside Circle::draw() method.");
-    }
-}
-
-class Rectangle implements Shape {
-
-    @Override
-    public void draw() {
-        System.out.println("Inside Rectangle::draw() method.");
-    }
-}
-```
-
-*Explanation*:
-- The `ShapeFactory` creates instances of `Shape` without the client needing to know the concrete classes.
-
 ## Common Pitfalls and Troubleshooting
 
 Transitioning to Java and Spring Boot may present certain challenges. Being aware of common pitfalls can save time and reduce frustration.
@@ -556,17 +447,15 @@ In the next chapter, you'll delve into **Java Fundamentals**, where you'll revis
 
 ## Glossary of Terms
 
-| Term                     | Definition                                                                                                                                  |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Spring Boot**          | A framework that simplifies the development of standalone Spring applications by providing defaults and auto-configuration.                 |
-| **Dependency Injection** | A design pattern that allows a class to receive its dependencies from external sources rather than creating them itself.                    |
-| **Inversion of Control** | A principle in software engineering where the control of object creation and lifecycle is transferred to a container or framework.          |
-| **Bean**                 | An object that is managed by the Spring IoC container.                                                                                      |
-| **REST Controller**      | A specialized controller in Spring Boot that handles RESTful web services.                                                                  |
-| **Auto-Configuration**   | Spring Boot's mechanism to automatically configure your application based on the dependencies you have added.                               |
-| **Actuator**             | A Spring Boot module that provides production-ready features to help you monitor and manage your application.                               |
-| **Singleton**            | A design pattern that restricts the instantiation of a class to one single instance.                                                        |
-| **Factory Pattern**      | A creational design pattern that provides an interface for creating objects without specifying the exact class of the object to be created. |
+| Term                     | Definition                                                                                                                         |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Spring Boot**          | A framework that simplifies the development of standalone Spring applications by providing defaults and auto-configuration.        |
+| **Dependency Injection** | A design pattern that allows a class to receive its dependencies from external sources rather than creating them itself.           |
+| **Inversion of Control** | A principle in software engineering where the control of object creation and lifecycle is transferred to a container or framework. |
+| **Bean**                 | An object that is managed by the Spring IoC container.                                                                             |
+| **REST Controller**      | A specialized controller in Spring Boot that handles RESTful web services.                                                         |
+| **Auto-Configuration**   | Spring Boot's mechanism to automatically configure your application based on the dependencies you have added.                      |
+| **Actuator**             | A Spring Boot module that provides production-ready features to help you monitor and manage your application.                      |
 
 ## Additional Resources
 
