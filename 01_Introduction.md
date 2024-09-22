@@ -19,7 +19,7 @@ Welcome to **Chapter 1: Introduction** of the _Comprehensive Java Spring Boot Tu
 
 Enterprise applications demand scalability, robustness, and maintainability. Java has long been a staple in enterprise environments due to its performance, security features, and vast ecosystem. Spring Boot enhances Java's capabilities by providing a streamlined framework for building production-ready applications with minimal configuration.
 
-![Enterprise Architecture Diagram](/assets/Figure_1.1_ Spring_Boot_in_Enterprise_Architecture.png)
+![Enterprise Architecture Diagram](/assets/Figure%201.1_%20Spring%20Boot%20in%20Enterprise-2024-09-22-012230.png)
 
 *Figure 1.1: Spring Boot in Enterprise Architecture*
 
