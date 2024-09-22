@@ -2,13 +2,13 @@
 
 ## 1. [Introduction](./01_Introduction.md)
 
-- **1.1. [Welcome](./01_Introduction.md#welcome)**
+- **1.1. [Welcome](./01_Introduction.md#1-welcome)**
   - Overview of the Tutorial
   - Learning Objectives
-- **1.2. [Why Java Spring Boot?](./01_Introduction.md#why-java-spring-boot)**
+- **1.2. [Why Java Spring Boot?](./01_Introduction.md#2-why-java-spring-boot)**
   - Advantages of Spring Boot
   - Comparison with Other Frameworks
-- **1.3. [Setting Up the Development Environment](./01_Introduction.md#setting-up-the-development-environment)**
+- **1.3. [Setting Up the Development Environment](./01_Introduction.md#subtopic-3-setting-up-the-development-environment)**
   - Installing Java Development Kit (JDK)
   - Setting Up an IDE (IntelliJ IDEA / Eclipse)
   - Installing Maven or Gradle

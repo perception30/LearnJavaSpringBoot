@@ -12,7 +12,7 @@ Enterprise Java development demands robust, scalable, and maintainable applicati
 
 For senior backend developers proficient in languages like Node.js and TypeScript, transitioning to Java and Spring Boot involves understanding the paradigms and best practices unique to the Java ecosystem. This chapter bridges that gap by highlighting both similarities and differences, ensuring a smooth and efficient learning curve.
 
-## Subtopic 1: Welcome
+## 1: Welcome
 
 ### Overview of the Tutorial
 
@@ -35,7 +35,7 @@ By the end of this tutorial, you will be able to:
 4. **Optimize Performance**: Enhance application performance through effective caching, asynchronous processing, and more.
 5. **Deploy Applications**: Navigate the deployment process, including containerization and cloud integrations.
 
-## Subtopic 2: Why Java Spring Boot?
+## 2: Why Java Spring Boot?
 
 ### Advantages of Spring Boot
 
